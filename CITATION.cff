@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying manuscript when using these analyses. Publication details will be added when available."
+type: software
+title: "plant-scRNA-vs-snRNA: analysis scripts and notebooks for Modality dependent trade-offs in reliability and information recovery for plant single-cell RNA sequencing"
+authors:
+  - family-names: Adema
+    given-names: Kelvin
+  - family-names: Muller
+    given-names: Sophia
+  - family-names: Holmer
+    given-names: Rens
+  - family-names: Kohlen
+    given-names: Wouter
+abstract: "Analysis scripts and notebooks for the comparison of plant single-cell and single-nucleus RNA sequencing in Medicago truncatula and Arabidopsis thaliana."
+keywords:
+  - single-cell RNA sequencing
+  - single-nucleus RNA sequencing
+  - Medicago truncatula
+  - Arabidopsis thaliana

@@ -1,0 +1,23 @@
+item	analysis_code	renderer	processed_inputs	generated_output
+Figure 1	manual	manual	manual artwork; no computational input	manual artwork; no generated output
+Figure 2	scripts/analysis/01_stress_response.py	scripts/figures/fig2_stress_response.R	input/01_stress_response	output/figures/main/F2/Fig2_stress_response.pdf
+Figure 3	scripts/analysis/02_nuclear_recovery.py; scripts/analysis/03_recovery_attrition.py	scripts/figures/fig3_nuclear_recovery.R	input/02_nuclear_recovery; input/03_recovery_attrition	output/figures/main/F3/Fig3_nuclear_recovery.pdf
+Figure 4	scripts/analysis/04_read_yield.py	scripts/figures/fig4_read_yield.R	input/04_read_yield	output/figures/main/F4/Fig4_read_yield.pdf
+Figure 5	scripts/analysis/05_composition.py	scripts/figures/fig5_composition_umap.R	input/05_composition	output/figures/main/F5/Fig5_composition_umap.pdf
+Figure 6	scripts/analysis/06_cell_identity.py	scripts/figures/fig6_cell_identity.R	input/06_cell_identity	output/figures/main/F6/Fig6_cell_identity.pdf
+Figure 7	scripts/analysis/07_read_budget.py	scripts/figures/fig7_read_budget.R	input/07_read_budget	output/figures/main/F7/Fig7_read_budget.pdf
+Figure 8	scripts/analysis/08_nf_response.py	scripts/figures/fig8_nf_response.R	input/08_nf_response	output/figures/main/F8/Fig8_nf_response.pdf
+Figure S1	scripts/analysis/03_recovery_attrition.py	scripts/figures/figS1_barcode_rank.R	input/03_recovery_attrition	output/figures/supplementary/FigS1_barcode_rank.pdf
+Figure S2	scripts/analysis/03_recovery_attrition.py	scripts/figures/figS2_qc_fractions.R	input/03_recovery_attrition	output/figures/supplementary/FigS2_qc_fractions.pdf
+Figure S3	scripts/analysis/03_recovery_attrition.py	scripts/figures/figS3_read_flow.R	input/03_recovery_attrition	output/figures/supplementary/FigS3_read_flow.pdf
+Figure S4	scripts/analysis/04_read_yield.py	scripts/figures/figS4_matched_depth.R	input/04_read_yield	output/figures/supplementary/FigS4_matched_depth.pdf
+Figure S5	scripts/analysis/06_cell_identity.py	scripts/figures/figS5_centroids.R	input/06_cell_identity	output/figures/supplementary/FigS5_centroids.pdf
+Figure S6	scripts/analysis/06_cell_identity.py	scripts/figures/figS6_knn_all_pairs.R	input/06_cell_identity	output/figures/supplementary/FigS6_knn_all_pairs.pdf
+Figure S7	scripts/analysis/08_nf_response.py	scripts/figures/figS7_layers.R	input/08_nf_response	output/figures/supplementary/FigS7_layers.pdf
+Figure S8	scripts/analysis/08_nf_response.py	scripts/figures/figS8_rank_reproducibility.R	input/08_nf_response	output/figures/supplementary/FigS8_rank_reproducibility.pdf
+Table S1	scripts/analysis/01_stress_response.py	scripts/figures/tableS1_deg_lists.R	input/01_stress_response	output/tables/supplementary/TableS1_DEG_lists.xlsx
+Table S2	scripts/analysis/01_stress_response.py	scripts/figures/tableS2_go_enrichment.R	input/01_stress_response	output/tables/supplementary/TableS2_GO_enrichment.xlsx
+Table S3	scripts/analysis/02_nuclear_recovery.py; scripts/analysis/03_recovery_attrition.py	scripts/figures/tableS3_library_inventory.R	input/02_nuclear_recovery; input/03_recovery_attrition	output/tables/supplementary/TableS3_library_inventory.xlsx
+Table S4	scripts/analysis/05_composition.py	scripts/figures/tableS4_composition.R	input/05_composition	output/tables/supplementary/TableS4_composition.xlsx
+Table S5	scripts/analysis/06_cell_identity.py	scripts/figures/tableS5_centroids.R	input/06_cell_identity	output/tables/supplementary/TableS5_centroids.xlsx
+Table S6	scripts/analysis/04_read_yield.py; scripts/analysis/07_read_budget.py	scripts/figures/tableS6_read_budget.R	input/04_read_yield; input/07_read_budget	output/tables/supplementary/TableS6_read_budget.xlsx
