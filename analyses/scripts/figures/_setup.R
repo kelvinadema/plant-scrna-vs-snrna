@@ -10,7 +10,7 @@ suppressPackageStartupMessages({
 })
 
 script_file <- sub("^--file=", "", commandArgs()[grepl("^--file=", commandArgs())][1])
-chapter_dir <- normalizePath(file.path(dirname(script_file), "../.."))
+chapter_dir <- normalizePath(file.path(dirname(script_file), "../../.."))
 analyses_dir <- file.path(chapter_dir, "output/tables")
 bulk_dir <- file.path(chapter_dir, "output/bulk")
 fig_main_dir <- file.path(chapter_dir, "output/figures/main")

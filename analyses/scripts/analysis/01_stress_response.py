@@ -11,10 +11,10 @@ import pandas as pd
 from scipy import stats
 
 if '__file__' in globals():
-    ROOT = Path(__file__).resolve().parents[2]
+    ROOT = Path(__file__).resolve().parents[3]
 else:
     ROOT = next(p for p in [Path.cwd(), *Path.cwd().parents]
-                if (p / 'input').is_dir() and (p / 'scripts').is_dir())
+                if (p / 'input').is_dir() and (p / 'analyses/scripts').is_dir())
 INPUT = ROOT / 'input/01_stress_response'
 BULK = ROOT / 'output/bulk'
 TABLES = ROOT / 'output/tables/01_stress_response'

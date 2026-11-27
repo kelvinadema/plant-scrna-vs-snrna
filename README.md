@@ -31,14 +31,14 @@ source .venv/bin/activate
 python -m pip install -r analyses/requirements.txt
 ```
 
-Execution requires the processed study inputs under `analyses/input/`, with the paths used in the scripts and [figure map](analyses/figure_map.tsv). Once those inputs are available:
+Execution requires the processed study inputs under `input/`, with the paths used in the scripts and [figure map](analyses/figure_map.tsv). Once those inputs are available:
 
 ```bash
 cd analyses
 python scripts/reproduce.py
 ```
 
-The runner executes the eight analyses in order and writes results to `analyses/output/`. To run selected analyses, use `python scripts/reproduce.py --section 04 08`. Section 01 copies precomputed bulk results into the output directory only when those files are absent, preserving any separately regenerated bulk results.
+The runner executes the eight analyses in order and writes results to `output/` at the project root. Paths in the figure map are also relative to the project root. To run selected analyses, use `python scripts/reproduce.py --section 04 08`. Section 01 copies precomputed bulk results into the output directory only when those files are absent, preserving any separately regenerated bulk results.
 
 To use the notebooks, install `analyses/requirements-notebooks.txt` from the repository root, then launch `jupyter lab analyses/notebooks`. The notebooks and scripts implement the same analyses. A fresh clone can be read without data but cannot execute the analyses until the inputs are available.
 
@@ -51,9 +51,9 @@ conda env create -f environment-r.yml
 conda run -n ch3-figures Rscript scripts/figures/render_all.R
 ```
 
-Figures are written to `output/figures/` and supplementary tables to `output/tables/supplementary/`. Figure 1 is manually assembled; other thesis figures may include manual layout adjustments.
+Relative to the project root, figures are written to `output/figures/` and supplementary tables to `output/tables/supplementary/`. Figure 1 is manually assembled; other thesis figures may include manual layout adjustments.
 
-The optional bulk workflow has a separate environment in `analyses/scripts/bulk/environment.yml`. Full Medicago GO analysis also requires the original gene annotation at `analyses/input/bulk/medicago_gene_annotation.tsv`.
+The optional bulk workflow has a separate environment in `analyses/scripts/bulk/environment.yml`. Full Medicago GO analysis also requires the original gene annotation at `input/bulk/medicago_gene_annotation.tsv`.
 
 ## Workflow scope
 

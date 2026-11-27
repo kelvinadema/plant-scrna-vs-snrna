@@ -38,7 +38,7 @@ Marker and read-budget comparisons use 25 training and 25 test cells. `nNOD` has
 
 ## Downstream analyses
 
-The Python scripts and notebooks begin with processed inputs organised by analysis under `analyses/input/`. Sections 02 and 03 share library summaries in `02_nuclear_recovery/`. Section 03 also uses per-cell QC and read-flow summaries. Subsequent sections use depth/yield summaries, refined labels and embeddings, cell-identity summaries, read-budget estimates and Nod-factor response inputs. Bulk RNA-seq and the Chapter 2 A17 Nod-factor reference are separate inputs.
+The Python scripts and notebooks begin with processed inputs organised by analysis under `input/`. Sections 02 and 03 share library summaries in `02_nuclear_recovery/`. Section 03 also uses per-cell QC and read-flow summaries. Subsequent sections use depth/yield summaries, refined labels and embeddings, cell-identity summaries, read-budget estimates and Nod-factor response inputs. Bulk RNA-seq and the Chapter 2 A17 Nod-factor reference are separate inputs.
 
 Section 01 uses DESeq2's formal effect-size threshold test at adjusted P < 0.01 and |log2 fold change| > 1. Figure 7 uses corrected counts at AUROC 0.70; the Table S6 workflow also exports raw-count, alternative-target and second-seed estimates. The full input-to-figure mapping is in [figure_map.tsv](../analyses/figure_map.tsv).
 

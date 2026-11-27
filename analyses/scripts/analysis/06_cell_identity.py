@@ -9,7 +9,7 @@ for _v in ('OMP_NUM_THREADS', 'OPENBLAS_NUM_THREADS', 'MKL_NUM_THREADS'):
     os.environ.setdefault(_v, '1')
 from pathlib import Path
 START = Path(__file__).resolve().parent if '__file__' in globals() else Path.cwd()
-ROOT = next(p for p in (START, *START.parents) if (p / 'input').is_dir() and (p / 'scripts').is_dir())
+ROOT = next(p for p in (START, *START.parents) if (p / 'input').is_dir() and (p / 'analyses/scripts').is_dir())
 
 import numpy as np
 import pandas as pd

@@ -38,7 +38,7 @@ def main():
             records.append({'section': source.stem, 'seconds': round(time.monotonic()-start, 2)})
     if args.figures or args.figures_only:
         subprocess.run([args.rscript, str(ROOT/'scripts/figures/render_all.R')], cwd=ROOT, check=True)
-    stats = ROOT/'output/stats'
+    stats = ROOT.parent/'output/stats'
     stats.mkdir(parents=True, exist_ok=True)
     (stats/'last_run.json').write_text(json.dumps({
         'python': sys.version.split()[0],
